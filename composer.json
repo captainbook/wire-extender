@@ -1,5 +1,5 @@
 {
-    "name": "wire-elements/wire-extender",
+    "name": "captainbook/wire-extender",
     "description": "Embed your Livewire components anywhere.",
     "require": {
         "php": "^8.1",
