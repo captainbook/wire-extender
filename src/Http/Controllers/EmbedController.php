@@ -4,7 +4,7 @@ namespace WireElements\WireExtender\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Blade;
-use Livewire\Features\SupportScriptsAndAssets\SupportScriptsAndAssets;
+use App\Http\Livewire\Features\SupportScriptsAndAssets\SupportScriptsAndAssets;
 use WireElements\WireExtender\WireExtender;
 
 class EmbedController
@@ -22,14 +22,14 @@ class EmbedController
             return [
                 $componentName => Blade::render('@livewire($component, $params)', [
                     'component' => $componentName,
-                    'params' => $componentParams,
+                    'params'    => $componentParams,
                 ]),
             ];
         })->filter();
 
         return [
             'components' => $components,
-            'assets' => SupportScriptsAndAssets::getAssets(),
+            'assets'     => SupportScriptsAndAssets::getAssets(),
         ];
     }
 }

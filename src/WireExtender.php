@@ -3,7 +3,7 @@
 namespace WireElements\WireExtender;
 
 use Livewire\Exceptions\ComponentNotFoundException;
-use Livewire\Mechanisms\ComponentRegistry;
+use App\Http\Livewire\Mechanisms\ComponentRegistry;
 use ReflectionClass;
 use WireElements\WireExtender\Attributes\Embeddable;
 
